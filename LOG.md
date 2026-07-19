@@ -40,7 +40,15 @@ especiales. Sin dependencias externas, sin servidores.
   instalación por IA, flujo Transitorio, comandos, qué protege y qué no,
   roadmap (Windows/Linux/equipos, siempre local).
 - Publicado en GitHub como repo público `flopez1977/VAULT-Privado`.
-**Estado al terminar:** v1 en GitHub.
+- Post-publicación (misma sesión): sección README "varios ordenadores /
+  sincronización" (Vaultwarden en VPS propio explicado, fuera de esta versión
+  — filosofía 100% local); imagen de cabecera (`assets/vault-privado.jpg`,
+  ilustración del flujo antes→Transitorio→vault→después); instalación guiada
+  por la IA (sección "Para la IA que está instalando esto": la IA añade las
+  reglas de PARA-TU-IA.md al CLAUDE.md/AGENTS.md del usuario con confirmación;
+  el usuario solo crea su contraseña maestra). Texto de difusión para la
+  comunidad Imperio Agéntico redactado (Fernando lo publica).
+**Estado al terminar:** v1 en GitHub con README completo, imagen e instalación guiada.
 **Pendiente para próxima sesión:**
 - [ ] Probar instalación limpia en otra máquina/usuario
 - [ ] Versión Windows (Credential Manager / `cmdkey`-`CredentialManager` PS)
