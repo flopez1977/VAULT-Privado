@@ -1,5 +1,7 @@
 # VAULT-Privado
 
+![VAULT-Privado: de claves desperdigadas a caja fuerte local, con tu IA guardándolas sin verlas](assets/vault-privado.jpg)
+
 **Caja fuerte local de credenciales para trabajar con asistentes de IA
 (Claude Code, Codex, etc.) sin tener ni una contraseña en texto plano.**
 
