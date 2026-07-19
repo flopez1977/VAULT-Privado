@@ -149,6 +149,30 @@ decidáis imprimir un secreto en el chat (por eso las reglas de
 `PARA-TU-IA.md`); pérdida de la contraseña maestra (sin ella no hay bóveda —
 guárdala bien).
 
+## Preguntas frecuentes
+
+**Tengo dos Macs con el mismo ID de Apple, ¿la bóveda se ve en las dos?**
+No. El llavero `vault-privado` es un archivo local
+(`~/Library/Keychains/vault-privado.keychain-db`) y queda **fuera** del
+Llavero de iCloud — lo único que Apple sincroniza entre tus dispositivos es
+el llavero de iCloud (lo que ves en la app Contraseñas). Tu bóveda vive solo
+en el Mac donde la creaste; ni el mismo Apple ID la replica. Si quieres
+VAULT-Privado en dos máquinas, instálalo en cada una (serán dos bóvedas
+independientes) o mira la sección siguiente sobre sincronización.
+
+**¿Puedo guardar cualquier contraseña, o solo cosas de proyectos?**
+Lo que quieras: contraseñas de webs, licencias, códigos de recuperación,
+tokens... Es TU bóveda, tú decides qué entra. La gracia es que es un llavero
+100% aparte de tu llavero principal del Mac: tu IA solo opera contra la
+bóveda dedicada, y tus contraseñas personales (banca, iCloud, certificados)
+siguen donde estaban, sin que la IA las toque jamás.
+
+**¿Se guarda en mis copias de seguridad?**
+Sí — el archivo del llavero entra en Time Machine y clones del disco, y viaja
+**cifrado**: quien tenga la copia sigue necesitando tu contraseña maestra.
+Eso es tu red de seguridad si cambias de Mac; sin la contraseña maestra, no
+hay bóveda que restaurar.
+
 ## No contemplado en esta versión: varios ordenadores / sincronización
 
 VAULT-Privado es **100% local a propósito**: tu bóveda vive solo en tu Mac,
