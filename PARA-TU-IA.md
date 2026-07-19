@@ -1,7 +1,10 @@
 # VAULT-Privado — Instrucciones para el asistente de IA
 
-> Copia este bloque en las instrucciones de tu asistente (CLAUDE.md, AGENTS.md
-> o equivalente). Define cómo debe gestionar credenciales en esta máquina.
+> Este bloque va en las instrucciones persistentes del asistente (CLAUDE.md,
+> AGENTS.md o equivalente). **No hace falta que lo copies tú a mano**: la IA
+> que instala VAULT-Privado se encarga de añadirlo, pidiéndote confirmación y
+> recomendándote el mejor sitio (ver README, sección "Para la IA que está
+> instalando esto").
 
 ## Caja fuerte de credenciales (VAULT-Privado) — OBLIGATORIO
 

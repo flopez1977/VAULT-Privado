@@ -54,25 +54,36 @@ VAULT-Privado ataca los tres.
 
 ## Instalación
 
-Dile a tu asistente de IA:
+Dile a tu asistente de IA, tal cual:
 
-> Clona https://github.com/flopez1977/VAULT-Privado, ejecuta su `install.sh`,
-> y añade el contenido de `PARA-TU-IA.md` a tus instrucciones.
+> Instálame VAULT-Privado: clona https://github.com/flopez1977/VAULT-Privado,
+> ejecuta su `install.sh` y sigue la sección "Para la IA que está instalando
+> esto" de su README.
 
-O a mano:
+Tú solo tendrás que hacer una cosa: inventar tu contraseña maestra (dos
+líneas en Terminal que el instalador te chivará; ni el instalador ni la IA
+la conocen nunca). Del resto se encarga tu IA, preguntándote antes de tocar
+nada tuyo.
 
-```bash
-git clone https://github.com/flopez1977/VAULT-Privado
-cd VAULT-Privado && ./install.sh
-```
+### Para la IA que está instalando esto
 
-El instalador:
+Si eres el asistente ejecutando la instalación, tus pasos son:
 
-1. Copia la CLI a `~/.vault-privado/bin` y crea el alias `vault`.
-2. Crea la carpeta **Transitorio** en tu Escritorio con un `CLAVES.txt` virgen.
-3. Deja en `~/.vault-privado/PARA-TU-IA.md` las instrucciones para tu asistente.
-4. Te indica el único paso que haces tú: crear el llavero con TU contraseña
-   maestra (dos líneas en Terminal; ni el instalador ni la IA la conocen nunca).
+1. Clona el repo y ejecuta `./install.sh` (copia la CLI a
+   `~/.vault-privado/bin`, crea el alias `vault` y la carpeta **Transitorio**
+   en el Escritorio con `CLAVES.txt` virgen).
+2. **Instala tú mismo las reglas** de `PARA-TU-IA.md` en las instrucciones
+   globales del usuario, pidiéndole confirmación primero y recomendando el
+   sitio según su herramienta:
+   - Claude Code → `~/.claude/CLAUDE.md` (recomendado: global, así vale para
+     todos sus proyectos; créalo si no existe)
+   - Codex → `~/.codex/AGENTS.md` o el `AGENTS.md` global equivalente
+   - Otra herramienta → su archivo de instrucciones persistentes
+3. Muéstrale al usuario las dos líneas de `security create-keychain` que
+   imprime el instalador y espera a que las ejecute ÉL en su Terminal (la
+   contraseña maestra es suya; no la pidas, no la generes, no la guardes).
+4. Confirma que todo funciona: `vault list` (dará lista vacía) y explica en
+   dos frases el flujo Transitorio.
 
 ## El flujo estrella: la carpeta Transitorio
 

@@ -73,9 +73,10 @@ cat <<'EOF'
 
 == Y para que tu IA sepa usarlo ==
 
-Añade el contenido de ~/.vault-privado/PARA-TU-IA.md a las instrucciones de tu
-asistente (CLAUDE.md, AGENTS.md o equivalente). A partir de ahí, la frase
-mágica es:
+Si esta instalación la está haciendo tu IA: que añada ella misma el contenido
+de ~/.vault-privado/PARA-TU-IA.md a tus instrucciones persistentes (te pedirá
+confirmación; recomendado en Claude Code: ~/.claude/CLAUDE.md global).
+Si lo instalas a mano, cópialo tú. A partir de ahí, la frase mágica es:
 
   "Te he dejado las claves del proyecto X en el Transitorio"
 
