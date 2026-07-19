@@ -1,0 +1,14 @@
+Esta carpeta es el TRANSITORIO de VAULT-Privado.
+
+Es una zona de paso, no un almacén: aquí dejas credenciales un momento
+(en CLAVES.txt) para que tu asistente de IA las guarde cifradas en tu
+llavero, y después el archivo se vacía.
+
+Flujo:
+1. Abre CLAVES.txt y escribe las claves de UN proyecto (Etiqueta: valor).
+2. Dile a tu IA: "Te he dejado las claves del proyecto X en el Transitorio".
+3. Tu IA las guarda cifradas, deja un registro en la carpeta del proyecto
+   y te pide permiso para vaciar CLAVES.txt.
+
+Nunca dejes credenciales aquí "para siempre" — para eso está el llavero
+(app "Acceso a Llaveros" → llavero vault-privado).

@@ -1,0 +1,18 @@
+# CLAVES.txt — archivo transitorio de VAULT-Privado
+# Escribe aquí las credenciales de UN proyecto, una por línea, formato "Etiqueta: valor".
+# Cuando termines, dile a tu IA:  "Te he dejado las claves del proyecto X en el Transitorio"
+# Tu IA las guardará cifradas en el llavero, dejará un registro en la carpeta del
+# proyecto y te pedirá permiso para vaciar este archivo.
+#
+# Ejemplos (borra estas líneas y pon las tuyas):
+# Servidor: 203.0.113.10
+# Usuario SSH: miusuario
+# Password SSH: xxxxxxxx
+# Servidor FTP: ftp.midominio.com
+# Usuario FTP: ftp@midominio.com
+# Password FTP: xxxxxxxx
+# API Key: xxxxxxxxxxxxxxxx
+#
+# También puedes pegar una clave SSH privada completa (el bloque -----BEGIN ... -----END):
+# tu IA la guardará como archivo en ~/.ssh con permisos correctos, no como texto.
+
