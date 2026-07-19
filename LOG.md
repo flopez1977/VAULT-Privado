@@ -48,7 +48,11 @@ especiales. Sin dependencias externas, sin servidores.
   reglas de PARA-TU-IA.md al CLAUDE.md/AGENTS.md del usuario con confirmación;
   el usuario solo crea su contraseña maestra). Texto de difusión para la
   comunidad Imperio Agéntico redactado (Fernando lo publica).
-**Estado al terminar:** v1 en GitHub con README completo, imagen e instalación guiada.
+- FAQ añadida al README a raíz de preguntas reales de la comunidad: no
+  sincroniza por Apple ID (llavero local, fuera de iCloud Keychain), sirve
+  para cualquier contraseña (bóveda 100% aparte de la principal), y entra
+  cifrado en Time Machine (restaurable solo con la contraseña maestra).
+**Estado al terminar:** v1 en GitHub con README completo (imagen, instalación guiada, FAQ).
 **Pendiente para próxima sesión:**
 - [ ] Probar instalación limpia en otra máquina/usuario
 - [ ] Versión Windows (Credential Manager / `cmdkey`-`CredentialManager` PS)
