@@ -136,6 +136,33 @@ decidáis imprimir un secreto en el chat (por eso las reglas de
 `PARA-TU-IA.md`); pérdida de la contraseña maestra (sin ella no hay bóveda —
 guárdala bien).
 
+## No contemplado en esta versión: varios ordenadores / sincronización
+
+VAULT-Privado es **100% local a propósito**: tu bóveda vive solo en tu Mac,
+cifrada por el sistema, sin depender de ningún servidor. Eso significa que
+esta versión **no sincroniza** entre máquinas.
+
+¿Necesitas las mismas contraseñas en varios ordenadores, o compartirlas con
+un equipo? Para ese caso existe **[Vaultwarden](https://github.com/dani-garcia/vaultwarden)**,
+un servidor Bitwarden ligero y open source que instalas **en tu propio VPS**
+(un contenedor Docker). Cómo funciona, en corto:
+
+- Tú montas el servidor en TU servidor — las claves nunca van a la nube de
+  una empresa, siguen siendo tuyas.
+- El cifrado es de conocimiento cero: se cifra y descifra en tus
+  dispositivos; ni el propio servidor puede leer tus contraseñas.
+- Cada persona/ordenador accede con las apps oficiales de Bitwarden (web,
+  móvil, extensión de navegador) — visual, sin terminal — y hay CLI (`bw`)
+  para los asistentes de IA.
+- Permite bóvedas compartidas por equipos ("organizaciones") con permisos
+  por colección.
+
+A cambio, asumes mantener un servicio expuesto a internet (actualizaciones,
+copias de seguridad, TLS). Por eso no va en esta versión: si trabajas tú solo
+en un ordenador, el llavero local es más simple y con menos superficie de
+ataque. Si algún día VAULT-Privado incorpora sincronización, será opcional y
+sobre infraestructura tuya — la filosofía no cambia.
+
 ## Roadmap
 
 - **Windows** (Credential Manager) y **Linux** (Secret Service): misma CLI,
